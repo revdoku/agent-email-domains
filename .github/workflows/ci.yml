@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Validate domains.json and check that lists/ is current
+        run: node scripts/build.mjs --check
+      - name: Check MX records and evidence pages
+        if: github.event_name == 'pull_request'
+        run: node scripts/check-domains.mjs

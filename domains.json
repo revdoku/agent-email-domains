@@ -1,0 +1,179 @@
+[
+  {
+    "domain": "agentmail.to",
+    "provider": "AgentMail",
+    "category": "agent_inbox",
+    "evidence": "https://docs.agentmail.to/quickstart"
+  },
+  {
+    "domain": "atomicmail.ai",
+    "provider": "Atomic Mail",
+    "category": "agent_inbox",
+    "evidence": "https://docs.atomicmail.ai/custom-domains"
+  },
+  {
+    "domain": "devinbox.io",
+    "provider": "DevInbox",
+    "category": "test_inbox",
+    "evidence": "https://devinbox.io/doc/api-guide",
+    "notes": "Shutting down on 2026-12-31. New signups are closed."
+  },
+  {
+    "domain": "homingbox.net",
+    "provider": "Homingbox (agentboxd)",
+    "category": "agent_inbox",
+    "evidence": "https://agentboxd.com/"
+  },
+  {
+    "domain": "inbox.testmail.app",
+    "provider": "testmail.app",
+    "category": "test_inbox",
+    "evidence": "https://testmail.app/docs/",
+    "notes": "The apex testmail.app is the company mail domain."
+  },
+  {
+    "domain": "inbox4dev.link",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "inboxapi.link",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "lumbox.co",
+    "provider": "Lumbox",
+    "category": "agent_inbox",
+    "evidence": "https://lumbox.co/docs/domains/",
+    "notes": "Also the company mail domain."
+  },
+  {
+    "domain": "mailosaur.net",
+    "provider": "Mailosaur",
+    "category": "test_inbox",
+    "evidence": "https://mailosaur.com/docs/inboxes",
+    "notes": "Addresses use subdomains: INBOX_ID.mailosaur.net."
+  },
+  {
+    "domain": "mailslurp.biz",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://www.mailslurp.com/docs/inboxes/"
+  },
+  {
+    "domain": "mailslurp.com",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://www.mailslurp.com/guides/creating-inboxes/",
+    "notes": "Earlier default domain. Also the company mail domain."
+  },
+  {
+    "domain": "mailslurp.info",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "mailslurp.net",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "mailslurp.world",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "mailslurp.xyz",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "mailtesting.net",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "nylas.email",
+    "provider": "Nylas",
+    "category": "agent_inbox",
+    "evidence": "https://developer.nylas.com/docs/v3/agent-accounts/",
+    "mx_host": "qasim.nylas.email",
+    "notes": "Agent Accounts trial domain. Addresses use per-app subdomains: name@APP.nylas.email. The apex has no MX."
+  },
+  {
+    "domain": "revdokumail.com",
+    "provider": "Revdoku",
+    "category": "agent_inbox",
+    "evidence": "https://revdoku.com/api.md"
+  },
+  {
+    "domain": "robotomail.co",
+    "provider": "Robotomail",
+    "category": "agent_inbox",
+    "evidence": "https://robotomail.com/docs/quickstart"
+  },
+  {
+    "domain": "slurpbox.link",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "slurpinbox.com",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "slurpmail.link",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "temprelay.net",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "tempsmtp.com",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "theagentmail.net",
+    "provider": "AgentMail (theagentmail.net)",
+    "category": "agent_inbox",
+    "evidence": "https://github.com/uriva/agentmail",
+    "notes": "Open-source project github.com/uriva/agentmail. Not the company behind agentmail.to."
+  },
+  {
+    "domain": "trylumbox.com",
+    "provider": "Lumbox",
+    "category": "agent_inbox",
+    "evidence": "https://lumbox.co/docs/quickstart/"
+  },
+  {
+    "domain": "zazamail.link",
+    "provider": "MailSlurp",
+    "category": "test_inbox",
+    "evidence": "https://api.mailslurp.com/available-domains"
+  },
+  {
+    "domain": "zerodrop-sandbox.online",
+    "provider": "ZeroDrop",
+    "category": "test_inbox",
+    "evidence": "https://zerodrop.dev/pricing",
+    "notes": "Shared domain on the free plan."
+  }
+]

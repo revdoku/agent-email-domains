@@ -1,0 +1,41 @@
+name: Release
+
+# Releases the list on the 1st of each month when domains.json changed since the last release.
+# Run it by hand from the Actions tab to release sooner.
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: node scripts/build.mjs --check
+      - name: Pick the version and write the release notes
+        id: prepare
+        run: echo "version=$(node scripts/release.mjs --notes notes.md)" >> "$GITHUB_OUTPUT"
+      - name: Commit CHANGELOG.md, tag and create the GitHub Release
+        if: steps.prepare.outputs.version != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.prepare.outputs.version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Release v$VERSION"
+          git tag "v$VERSION"
+          git push origin HEAD:main "v$VERSION"
+          gh release create "v$VERSION" --title "v$VERSION" --notes-file notes.md domains.json lists/*.txt
+      - name: Nothing to release
+        if: steps.prepare.outputs.version == ''
+        run: echo "domains.json has not changed since the last release."

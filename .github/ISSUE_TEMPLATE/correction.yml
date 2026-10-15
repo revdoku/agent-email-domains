@@ -1,0 +1,36 @@
+name: Correct a domain
+description: Report a wrong category, wrong details, or a domain that no longer gives out inboxes.
+title: "Correct: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We fix wrong entries. We remove an entry only when the domain no longer gives out inboxes to software. Accurate entries are not removed on request.
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      options:
+        - Wrong category
+        - The domain no longer gives out inboxes
+        - Wrong provider, evidence or notes
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details

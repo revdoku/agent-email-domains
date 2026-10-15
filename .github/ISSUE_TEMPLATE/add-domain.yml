@@ -1,0 +1,62 @@
+name: Add a domain
+description: Suggest a domain that gives out inboxes to AI agents or test automation.
+title: "Add: "
+labels: ["add-domain"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Each domain needs public evidence. See [CONTRIBUTING.md](https://github.com/revdoku/agent-email-domains/blob/main/CONTRIBUTING.md) for the rules.
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: The exact domain used in inbox addresses. Subdomains are covered automatically.
+      placeholder: agentmail.to
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: AgentMail
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - agent_inbox (inboxes created through an API for AI agents)
+        - test_inbox (inboxes for QA and test automation)
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence URL
+      description: A public provider page (docs, API reference, quickstart) that shows inbox addresses on this domain.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: mx
+    attributes:
+      label: MX record
+      description: Output of `dig +short MX <domain>`. If inboxes use subdomains, use one real inbox subdomain.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This domain gives out inboxes created by software (API, agent or test), not only the company's own mail.
+          required: true
+        - label: This is not a public temporary-mail site. Those belong in disposable-email lists.
+          required: true

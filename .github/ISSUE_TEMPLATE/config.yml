@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to contribute
+    url: https://github.com/revdoku/agent-email-domains/blob/main/CONTRIBUTING.md
+    about: Evidence rules and how to send a pull request.
