@@ -1,6 +1,6 @@
 # agent-email-domains
 
-Email domains that give out inboxes to AI agents and test automation. Open data.
+Open list of email domains used by AI agents and test automation. Detect agent signups in your app.
 
 | File | Contents |
 |---|---|
