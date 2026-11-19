@@ -1,9 +1,23 @@
 [
   {
+    "domain": "agentmail.ackuna.com",
+    "provider": "Ackuna",
+    "category": "agent_inbox",
+    "evidence": "https://agentmail.ackuna.com/docs/inboxes",
+    "notes": "Shared default domain of Ackuna Agent Mail."
+  },
+  {
     "domain": "agentmail.to",
     "provider": "AgentMail",
     "category": "agent_inbox",
     "evidence": "https://docs.agentmail.to/quickstart"
+  },
+  {
+    "domain": "agents.ackuna.com",
+    "provider": "Ackuna",
+    "category": "agent_inbox",
+    "evidence": "https://agentmail.ackuna.com/docs/inboxes",
+    "notes": "Earlier shared domain. Closed for new inboxes. Existing inboxes still send and receive."
   },
   {
     "domain": "atomicmail.ai",
@@ -23,6 +37,19 @@
     "provider": "Homingbox (agentboxd)",
     "category": "agent_inbox",
     "evidence": "https://agentboxd.com/"
+  },
+  {
+    "domain": "in.mails.ai",
+    "provider": "mails.ai",
+    "category": "agent_inbox",
+    "evidence": "https://mails.ai/docs/quickstart",
+    "notes": "Addresses have the form AGENT.WORKSPACE@in.mails.ai. The apex mails.ai is the company mail domain."
+  },
+  {
+    "domain": "inbound-mailtrap.io",
+    "provider": "Mailtrap",
+    "category": "agent_inbox",
+    "evidence": "https://mailtrap.io/agent-inbox/"
   },
   {
     "domain": "inbox.testmail.app",
@@ -51,6 +78,12 @@
     "notes": "Also the company mail domain."
   },
   {
+    "domain": "machinemail.dev",
+    "provider": "MachineMail",
+    "category": "agent_inbox",
+    "evidence": "https://machinemail.dev/docs/concepts/inboxes"
+  },
+  {
     "domain": "mailosaur.net",
     "provider": "Mailosaur",
     "category": "test_inbox",
@@ -61,7 +94,7 @@
     "domain": "mailslurp.biz",
     "provider": "MailSlurp",
     "category": "test_inbox",
-    "evidence": "https://www.mailslurp.com/docs/inboxes/"
+    "evidence": "https://api.mailslurp.com/available-domains"
   },
   {
     "domain": "mailslurp.com",
@@ -109,10 +142,10 @@
     "notes": "Agent Accounts trial domain. Addresses use per-app subdomains: name@APP.nylas.email. The apex has no MX."
   },
   {
-    "domain": "revdokumail.com",
-    "provider": "Revdoku",
+    "domain": "omail.sh",
+    "provider": "OpenMail",
     "category": "agent_inbox",
-    "evidence": "https://revdoku.com/api.md"
+    "evidence": "https://docs.openmail.sh/concepts/custom-domains"
   },
   {
     "domain": "robotomail.co",
@@ -156,6 +189,13 @@
     "category": "agent_inbox",
     "evidence": "https://github.com/uriva/agentmail",
     "notes": "Open-source project github.com/uriva/agentmail. Not the company behind agentmail.to."
+  },
+  {
+    "domain": "trial.ack.now",
+    "provider": "ACK",
+    "category": "agent_inbox",
+    "evidence": "https://ack.now/developers/",
+    "notes": "Shared domain for trial inboxes. The apex ack.now is the company mail domain."
   },
   {
     "domain": "trylumbox.com",

@@ -1,9 +1,15 @@
+agentmail.ackuna.com
 agentmail.to
+agents.ackuna.com
 atomicmail.ai
 homingbox.net
+in.mails.ai
+inbound-mailtrap.io
 lumbox.co
+machinemail.dev
 nylas.email
-revdokumail.com
+omail.sh
 robotomail.co
 theagentmail.net
+trial.ack.now
 trylumbox.com

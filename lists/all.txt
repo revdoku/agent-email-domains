@@ -1,11 +1,16 @@
+agentmail.ackuna.com
 agentmail.to
+agents.ackuna.com
 atomicmail.ai
 devinbox.io
 homingbox.net
+in.mails.ai
+inbound-mailtrap.io
 inbox.testmail.app
 inbox4dev.link
 inboxapi.link
 lumbox.co
+machinemail.dev
 mailosaur.net
 mailslurp.biz
 mailslurp.com
@@ -15,7 +20,7 @@ mailslurp.world
 mailslurp.xyz
 mailtesting.net
 nylas.email
-revdokumail.com
+omail.sh
 robotomail.co
 slurpbox.link
 slurpinbox.com
@@ -23,6 +28,7 @@ slurpmail.link
 temprelay.net
 tempsmtp.com
 theagentmail.net
+trial.ack.now
 trylumbox.com
 zazamail.link
 zerodrop-sandbox.online
